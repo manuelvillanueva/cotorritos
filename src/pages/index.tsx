@@ -5,11 +5,9 @@ import { client } from "../server-side/Client";
 import Main from "../components/Main";
 
 const IndexPage: React.FC<PageProps> = ({ serverData }) => {
-  const { menus } = serverData;
-
   return (
     <main>
-      <Main menus={menus} />
+      <Main serverData={serverData} />
     </main>
   );
 };

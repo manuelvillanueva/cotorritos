@@ -2,13 +2,13 @@ import { Link } from "gatsby";
 import * as React from "react";
 import * as style from "./Main.module.css";
 
-export default function Main({ menus }: any) {
+export default function Main({ serverData: { menus } }: any) {
   return (
     <section className={style.section}>
       <Link className="link-button" to="/alimentos">
         <button className="menu-button">Menú</button>
       </Link>
-      {menus.map((menu: any) => {
+      {menus?.map((menu: any) => {
         return (
           <div>
             <img src={menu.carta.url} alt="" className={style.image} />
