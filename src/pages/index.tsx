@@ -7,7 +7,15 @@ import Main from "../components/Main";
 const IndexPage: React.FC<PageProps> = ({ serverData }) => {
   return (
     <main>
-      <Main serverData={serverData} />
+      {/* <Main serverData={serverData} /> */}
+      {serverData?.menus?.map((menu: any) => {
+        return (
+          <div>
+            <img src={menu.carta.url} alt="" />
+          </div>
+        );
+      })}
+      <p>Hola mundo</p>
     </main>
   );
 };
