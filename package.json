@@ -16,12 +16,14 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.1",
     "gatsby": "^5.2.0",
     "gatsby-plugin-image": "^3.2.0",
     "gatsby-plugin-manifest": "^5.2.0",
     "gatsby-plugin-sharp": "^5.2.0",
     "gatsby-plugin-sitemap": "^6.2.0",
     "gatsby-source-filesystem": "^5.2.0",
+    "gatsby-source-graphcms": "^2.8.0",
     "gatsby-transformer-sharp": "^5.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
