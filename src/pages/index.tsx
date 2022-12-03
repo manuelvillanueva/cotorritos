@@ -12,6 +12,8 @@ const IndexPage: React.FC<PageProps> = ({ serverData }) => {
   );
 };
 
+export default IndexPage;
+
 export const Head: HeadFC = () => <title>Cotorritos</title>;
 
 export async function getMenuDataServerSide() {
@@ -40,5 +42,3 @@ export async function getServerData() {
     return { props: { error } };
   }
 }
-
-export default IndexPage;
