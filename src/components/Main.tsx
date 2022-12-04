@@ -5,7 +5,7 @@ import * as style from "./Main.module.css";
 export default function Main({ serverData: { menus } }: any) {
   return (
     <section className={style.section}>
-      <Link className="link-button" to="/alimentos">
+      <Link className="link-button" to="/">
         <button className="menu-button">Menú</button>
       </Link>
       {menus?.map((menu: any) => {
