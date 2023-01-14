@@ -6,6 +6,9 @@ const config: GatsbyConfig = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   graphqlTypegen: true,
+  flags: {
+    DEV_SSR: true,
+  },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
@@ -25,12 +28,6 @@ const config: GatsbyConfig = {
       },
       __key: "images",
     },
-    // {
-    //   resolve: "gatsby-source-graphcms",
-    //   options: {
-    //     endpoint: process.env.GRAPHCMS_ENDPOINT,
-    //   },
-    // },
   ],
 };
 
