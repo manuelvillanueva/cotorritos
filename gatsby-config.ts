@@ -11,6 +11,7 @@ const config: GatsbyConfig = {
   },
   plugins: [
     "gatsby-plugin-image",
+    `gatsby-plugin-netlify`,
     "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
@@ -28,6 +29,12 @@ const config: GatsbyConfig = {
       },
       __key: "images",
     },
+    // {
+    //   resolve: "gatsby-source-graphcms",
+    //   options: {
+    //     endpoint: process.env.GRAPHCMS_ENDPOINT,
+    //   },
+    // },
   ],
 };
 
