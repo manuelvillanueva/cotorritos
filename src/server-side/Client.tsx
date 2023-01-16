@@ -6,6 +6,14 @@ export const client = new ApolloClient({
   ssrMode: true,
   link: new HttpLink({
     uri: "https://api-us-east-1.hygraph.com/v2/cku8onzwd44mz01xnb6n16f2k/master",
-  }).concat(new RetryLink()),
+  }).concat(
+    new RetryLink({
+      delay: {
+        initial: 60000,
+        max: Infinity,
+        jitter: true,
+      },
+    })
+  ),
   cache: new InMemoryCache(),
 });
