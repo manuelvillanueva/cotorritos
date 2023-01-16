@@ -29,12 +29,6 @@ const config: GatsbyConfig = {
       },
       __key: "images",
     },
-    // {
-    //   resolve: "gatsby-source-graphcms",
-    //   options: {
-    //     endpoint: process.env.GRAPHCMS_ENDPOINT,
-    //   },
-    // },
   ],
 };
 
