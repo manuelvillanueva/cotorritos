@@ -5,7 +5,7 @@ import { RetryLink } from "apollo-link-retry";
 export const client = new ApolloClient({
   ssrMode: true,
   link: new HttpLink({
-    uri: process.env.GRAPHCMS_ENDPOINT,
+    uri: process.env.GATSBY_GRAPHCMS_ENDPOINT,
   }).concat(
     new RetryLink({
       delay: {
