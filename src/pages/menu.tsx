@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import { gql } from "@apollo/client";
 import { client } from "../server-side/Client";
@@ -8,7 +8,6 @@ const MenuPage: React.FC<PageProps> = ({ serverData }) => {
   return (
     <main>
       <Main serverData={serverData} />
-      <p>Hola mundo</p>
     </main>
   );
 };
